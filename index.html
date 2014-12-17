@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="setupWizard">
+  <head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-animate.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-route.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="css/wizard.css">
+  <script type="text/javascript"></script>
+</head>
+  <body>
+
+<div ng-controller="mainCtrl">
+<div class="row setupWizard" ng-controller="mainCtrl">
+        <span><a href="#!/step/test1">test1</a></span>
+        <span></span>
+        <span><a href="#!/step/test2">test2</a></span>
+	<span></span>
+    	<span><a href="#!/step/test3">test3</a></span>
+	<span></span>
+	<span><a href="#!/step/test4">test4</a></span>
+	<span></span>
+	<span><a href="#!/step/test5">test5</a></span>
+	<span></span>
+	<span><a href="#!/step/finish">finish</a></span>
+</div>
+
+ <div ng-view></div>
+</div>
+<div>
+<h1>This is a constant part!!!</h1>
+</div>
+
+  </body>
+</html>
